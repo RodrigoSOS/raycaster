@@ -1,0 +1,4081 @@
+{
+  "firstLayout": "",
+  "gdVersion": {
+    "build": 98,
+    "major": 4,
+    "minor": 0,
+    "revision": 0
+  },
+  "properties": {
+    "adMobAppId": "",
+    "adaptGameResolutionAtRuntime": false,
+    "folderProject": false,
+    "linuxExecutableFilename": "",
+    "macExecutableFilename": "",
+    "orientation": "landscape",
+    "packageName": "com.example.gamename",
+    "projectFile": "C:\\Users\\TRUE\\Documents\\GDevelop projects\\Raycasting\\experiment2.json",
+    "scaleMode": "nearest",
+    "sizeOnStartupMode": "",
+    "useExternalSourceFiles": false,
+    "version": "1.0.0",
+    "winExecutableFilename": "",
+    "winExecutableIconFile": "",
+    "name": "Gdevelop5_Pseudo3DEngine",
+    "author": "",
+    "windowWidth": 1280,
+    "windowHeight": 720,
+    "latestCompilationDirectory": "",
+    "maxFPS": 60,
+    "minFPS": 20,
+    "verticalSync": false,
+    "platformSpecificAssets": {},
+    "loadingScreen": {
+      "showGDevelopSplash": true
+    },
+    "extensions": [
+      {
+        "name": "BuiltinObject"
+      },
+      {
+        "name": "BuiltinAudio"
+      },
+      {
+        "name": "BuiltinVariables"
+      },
+      {
+        "name": "BuiltinTime"
+      },
+      {
+        "name": "BuiltinMouse"
+      },
+      {
+        "name": "BuiltinKeyboard"
+      },
+      {
+        "name": "BuiltinJoystick"
+      },
+      {
+        "name": "BuiltinCamera"
+      },
+      {
+        "name": "BuiltinWindow"
+      },
+      {
+        "name": "BuiltinFile"
+      },
+      {
+        "name": "BuiltinNetwork"
+      },
+      {
+        "name": "BuiltinScene"
+      },
+      {
+        "name": "BuiltinAdvanced"
+      },
+      {
+        "name": "Sprite"
+      },
+      {
+        "name": "BuiltinCommonInstructions"
+      },
+      {
+        "name": "BuiltinCommonConversions"
+      },
+      {
+        "name": "BuiltinStringInstructions"
+      },
+      {
+        "name": "BuiltinMathematicalTools"
+      },
+      {
+        "name": "BuiltinExternalLayouts"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "alwaysLoaded": false,
+        "file": "P-1-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "P-1-1-0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "buttons/1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "buttons\\1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "buttons/2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "buttons\\2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "buttons/3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "buttons\\3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "buttons/4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "buttons\\4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "P-1-1-6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "P-1-1-6.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "fon1280.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "fon1280.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "wall-1-13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "wall-1-13.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "obstacle-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "obstacle-1-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sensor-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sensor-1-0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "obstacle-1-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "obstacle-1-3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "wall-1-16.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "wall-1-16.png",
+        "smoothed": false,
+        "userAdded": true
+      }
+    ],
+    "resourceFolders": []
+  },
+  "objects": [],
+  "objectsGroups": [],
+  "variables": [
+    {
+      "name": "walls",
+      "value": ""
+    }
+  ],
+  "layouts": [
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "NewScene",
+      "name": "NewScene",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": true,
+        "gridB": 255,
+        "gridG": 180,
+        "gridHeight": 16,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridR": 158,
+        "gridWidth": 16,
+        "snap": true,
+        "windowMask": false,
+        "zoomFactor": 0.754
+      },
+      "objectsGroups": [],
+      "variables": [
+        {
+          "name": "Count",
+          "value": ""
+        },
+        {
+          "name": "Base_id",
+          "value": ""
+        },
+        {
+          "name": "CountBase",
+          "value": ""
+        },
+        {
+          "name": "wall_id",
+          "value": ""
+        },
+        {
+          "name": "fps",
+          "value": ""
+        },
+        {
+          "name": "sensorid",
+          "value": ""
+        },
+        {
+          "name": "angle_step",
+          "value": ""
+        },
+        {
+          "name": "wall_anim",
+          "value": ""
+        },
+        {
+          "name": "wall_colors",
+          "value": ""
+        }
+      ],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "background",
+          "locked": true,
+          "name": "background",
+          "persistentUuid": "51cb6851-76c9-4391-9b6a-42be375352a5",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 128,
+          "layer": "Controls",
+          "locked": false,
+          "name": "forward",
+          "persistentUuid": "d7daee76-9be2-4f61-ad91-2c9e2ebc2fb9",
+          "width": 128,
+          "x": 128,
+          "y": 352,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 128,
+          "layer": "Controls",
+          "locked": false,
+          "name": "backward",
+          "persistentUuid": "a5575a36-a890-4c2a-87cd-a40c6c1716ec",
+          "width": 128,
+          "x": 128,
+          "y": 544,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 128,
+          "layer": "Controls",
+          "locked": false,
+          "name": "Right",
+          "persistentUuid": "554d4466-f0b7-450e-ad1a-2158044aa251",
+          "width": 128,
+          "x": 224,
+          "y": 448,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 128,
+          "layer": "Controls",
+          "locked": false,
+          "name": "Left",
+          "persistentUuid": "0fcce226-e89f-4693-b3e6-866cb753cab7",
+          "width": 128,
+          "x": 32,
+          "y": 448,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 128,
+          "layer": "Controls",
+          "locked": false,
+          "name": "TurnLeft",
+          "persistentUuid": "ee99842a-41d4-45c4-ba9c-e4f9314f9637",
+          "width": 128,
+          "x": 976,
+          "y": 448,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 128,
+          "layer": "Controls",
+          "locked": false,
+          "name": "TurnRight",
+          "persistentUuid": "c7e634f4-df73-45b2-9f80-e5bf1f213f43",
+          "width": 128,
+          "x": 1120,
+          "y": 448,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 128,
+          "layer": "Controls",
+          "locked": false,
+          "name": "up",
+          "persistentUuid": "bcfe817f-1524-471e-88fc-fe752cfb2c46",
+          "width": 128,
+          "x": 1136,
+          "y": 64,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 128,
+          "layer": "Controls",
+          "locked": false,
+          "name": "down",
+          "persistentUuid": "844be6f1-81be-470b-ab89-899ea5a13371",
+          "width": 128,
+          "x": 1136,
+          "y": 208,
+          "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "player",
+          "persistentUuid": "4323219b-7ce7-4dad-bc66-b49b67bfe235",
+          "width": 0,
+          "x": 208,
+          "y": 656,
+          "zOrder": 50,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "FPS",
+          "persistentUuid": "abd47c17-5e7e-47b0-b571-ed5cf679f184",
+          "width": 0,
+          "x": 1200,
+          "y": 8,
+          "zOrder": 52,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 16,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "2af188ef-077c-42c7-948c-20fdfb526fbf",
+          "width": 64,
+          "x": 176,
+          "y": 672,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 16,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "9457dd61-6514-4e5d-a0ca-f4cb254deeaf",
+          "width": 128,
+          "x": 48,
+          "y": 576,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 80,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "b0ec7a6d-77ca-4976-8fc5-93e3131cc2d9",
+          "width": 16,
+          "x": 224,
+          "y": 592,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 16,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "e6023e46-021c-404b-b517-d194df802abe",
+          "width": 144,
+          "x": 240,
+          "y": 576,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 80,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "a9b3c4a0-38f4-4b71-8d88-4c40ac329a77",
+          "width": 16,
+          "x": 224,
+          "y": 448,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 80,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "8877b699-4f2c-4506-8721-78fc3eabf9d9",
+          "width": 16,
+          "x": 176,
+          "y": 592,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 16,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "94dd06b5-1dbd-4879-bc41-3542f9171f27",
+          "width": 128,
+          "x": 48,
+          "y": 528,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 16,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "8add1bff-9df9-42e0-90a5-5f7bcaff5056",
+          "width": 144,
+          "x": 240,
+          "y": 528,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 80,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "53f23669-092b-4928-881e-e2ce63ca65f2",
+          "width": 16,
+          "x": 176,
+          "y": 448,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 16,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "228084bc-dd1b-4927-adfd-7f875ebd6ecc",
+          "width": 16,
+          "x": 176,
+          "y": 320,
+          "zOrder": 55,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "rotate",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "e72b2310-d591-4622-a281-1fab0a6afc8c",
+          "width": 16,
+          "x": 256,
+          "y": 144,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 16,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "8a40ff7c-bd95-41b7-8b7e-e2e003e9d61c",
+          "width": 48,
+          "x": 96,
+          "y": 176,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 16,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "930a365d-1646-4abc-aacc-9d37d7217f72",
+          "width": 48,
+          "x": 96,
+          "y": 384,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 192,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "d2ff1dc3-18c9-46bf-8e1c-ae8f62db6659",
+          "width": 16,
+          "x": 96,
+          "y": 192,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -60,
+          "customSize": true,
+          "height": 16,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "3273dfac-d607-420f-b744-5806032ec7f7",
+          "width": 48,
+          "x": 287,
+          "y": 361,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "9e9de6d5-115d-4ff7-8668-59485223b354",
+          "width": 16,
+          "x": 144,
+          "y": 400,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "1ca1892d-0bdf-4767-b87e-11164278aebd",
+          "width": 16,
+          "x": 256,
+          "y": 400,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 16,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "0b828266-5181-4bcf-96d0-7f6f09e40176",
+          "width": 16,
+          "x": 160,
+          "y": 432,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 16,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "9f020e0c-01c3-4381-9166-3e32adcc0303",
+          "width": 16,
+          "x": 240,
+          "y": 432,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 16,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "9decf137-3faa-459e-b66e-59f5f71ba5cd",
+          "width": 16,
+          "x": 160,
+          "y": 128,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 16,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "8b59b828-9f79-46fa-8037-0dea20ca77d7",
+          "width": 16,
+          "x": 176,
+          "y": 240,
+          "zOrder": 55,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "rotate",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "a1ac22e2-bad1-4b7c-8f7e-e4867bdb6dc2",
+          "width": 16,
+          "x": 144,
+          "y": 272,
+          "zOrder": 55,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "rotate",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "41fd7814-1f63-4c95-962d-a7adadfe719d",
+          "width": 16,
+          "x": 32,
+          "y": 528,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "a738214e-3868-458d-a649-927cfb0c6e89",
+          "width": 16,
+          "x": 384,
+          "y": 528,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 688,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "4d7f9011-b3ee-4290-bf01-e7d8eedb8110",
+          "width": 16,
+          "x": 416,
+          "y": 16,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 16,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "e2f9c8de-7e09-43fa-814c-d7a90e858875",
+          "width": 32,
+          "x": 192,
+          "y": 96,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 16,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "135b81a5-0883-4679-9988-e9465bb11155",
+          "width": 400,
+          "x": 16,
+          "y": 704,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 688,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "febad0d3-12fa-4f29-9bb6-cef01ab97760",
+          "width": 16,
+          "x": 0,
+          "y": 16,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 16,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "ce03eac5-63ba-4960-8891-6a3c43eabdd1",
+          "width": 400,
+          "x": 16,
+          "y": 0,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "09ecedd6-e85b-4bc5-b843-9c1da7a655c2",
+          "width": 0,
+          "x": 320,
+          "y": 256,
+          "zOrder": 56,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "rotate",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "angle": 45,
+          "customSize": true,
+          "height": 22,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "da46ad9e-1167-40d9-951f-d1573af6f6f0",
+          "width": 22,
+          "x": 245,
+          "y": 421,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "5fcd5356-510b-486a-87a0-029601ec93ec",
+          "width": 16,
+          "x": 144,
+          "y": 144,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 16,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "b2502cea-e5f2-4607-b0ce-c3ad23484a4d",
+          "width": 16,
+          "x": 176,
+          "y": 112,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 45,
+          "customSize": true,
+          "height": 22,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "3c09dbab-b663-49c5-bd19-741de0960a19",
+          "width": 22,
+          "x": 229,
+          "y": 581,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 45,
+          "customSize": true,
+          "height": 22,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "8056b786-cc3d-4756-9d16-cda581338beb",
+          "width": 22,
+          "x": 229,
+          "y": 437,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 45,
+          "customSize": true,
+          "height": 22,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "384f3fc0-ab30-40c1-8415-455864787c4a",
+          "width": 22,
+          "x": 149,
+          "y": 421,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 45,
+          "customSize": true,
+          "height": 22,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "7372a745-7db9-4a32-bd2b-21c6b62939dc",
+          "width": 22,
+          "x": 165,
+          "y": 437,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 16,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "2607e4f9-05ca-4372-ae94-4c8b7a0c52a1",
+          "width": 16,
+          "x": 224,
+          "y": 112,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 16,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "ef27211d-cf23-4da7-8460-76e17ab25809",
+          "width": 16,
+          "x": 240,
+          "y": 128,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 45,
+          "customSize": true,
+          "height": 22,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "f2aece3e-1b49-496d-b42e-63c378ee104d",
+          "width": 22,
+          "x": 218,
+          "y": 96,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 45,
+          "customSize": true,
+          "height": 22,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "35d56f30-2141-4afa-920a-6df07c56e2a9",
+          "width": 22,
+          "x": 245,
+          "y": 133,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 45,
+          "customSize": true,
+          "height": 22,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "eaff094e-3edb-4373-92de-08544e1ed541",
+          "width": 22,
+          "x": 234,
+          "y": 112,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 45,
+          "customSize": true,
+          "height": 22,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "db3a1502-a14f-44c0-9eaa-9404105d1939",
+          "width": 22,
+          "x": 176,
+          "y": 96,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 45,
+          "customSize": true,
+          "height": 22,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "4d7f8380-0053-4962-9422-96852585fb13",
+          "width": 22,
+          "x": 160,
+          "y": 112,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 45,
+          "customSize": true,
+          "height": 22,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "57a57eca-10b3-479e-877c-83c24bbbb41d",
+          "width": 22,
+          "x": 149,
+          "y": 133,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 45,
+          "customSize": true,
+          "height": 22,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "5c0bf1a0-73ec-4a3c-afd8-e55842190e87",
+          "width": 22,
+          "x": 133,
+          "y": 389,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 45,
+          "customSize": true,
+          "height": 22,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "ac407f5d-9e9a-4a11-b8ca-012ec27a504d",
+          "width": 22,
+          "x": 165,
+          "y": 517,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 45,
+          "customSize": true,
+          "height": 22,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "472fa13e-1358-4a6d-9ad9-776c257fd1b4",
+          "width": 22,
+          "x": 165,
+          "y": 581,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 45,
+          "customSize": true,
+          "height": 22,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "d2391f3c-5a4b-4f8c-81c7-48027496944b",
+          "width": 22,
+          "x": 229,
+          "y": 517,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 60,
+          "customSize": true,
+          "height": 16,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "5745ffea-1372-433a-bbe4-6d4eee98fe49",
+          "width": 48,
+          "x": 287,
+          "y": 199,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -25,
+          "customSize": true,
+          "height": 16,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "07867b73-e1ed-44df-beaf-4cd3d969d299",
+          "width": 48,
+          "x": 257,
+          "y": 389,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 25,
+          "customSize": true,
+          "height": 16,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "d848c021-f38f-4976-a147-c8c85cdc2445",
+          "width": 48,
+          "x": 257,
+          "y": 171,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 45,
+          "customSize": true,
+          "height": 22,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "3d71c0fd-40f6-4150-95f3-7d0d750bf113",
+          "width": 22,
+          "x": 133,
+          "y": 165,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 45,
+          "customSize": true,
+          "height": 22,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "b3696ec9-4bb5-4de7-b4fc-808046e9319e",
+          "width": 22,
+          "x": 405,
+          "y": 5,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 45,
+          "customSize": true,
+          "height": 22,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "ef58c69c-98ca-414f-8737-ed3e06a9260e",
+          "width": 22,
+          "x": 405,
+          "y": 693,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 45,
+          "customSize": true,
+          "height": 22,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "4874d2a7-f1cb-4c81-8160-2574d8ce5f74",
+          "width": 22,
+          "x": 5,
+          "y": 5,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 45,
+          "customSize": true,
+          "height": 22,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "4fdb2d5b-5a83-4b49-b604-f530ece835dc",
+          "width": 22,
+          "x": 5,
+          "y": 693,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 135,
+          "customSize": true,
+          "height": 1,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "3b3e92e6-eaf3-4e11-b138-d64651295f26",
+          "width": 32,
+          "x": 32,
+          "y": 112,
+          "zOrder": 57,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 1,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "60db39cb-8497-4e3c-accb-261a5cb63436",
+          "width": 32,
+          "x": 32,
+          "y": 112,
+          "zOrder": 57,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 1,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "cbabcf9f-8308-42b4-b9a5-e1aa6c39ef6f",
+          "width": 32,
+          "x": 32,
+          "y": 112,
+          "zOrder": 57,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 45,
+          "customSize": true,
+          "height": 1,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "795df43a-d6c8-447b-a74c-14f10b092991",
+          "width": 32,
+          "x": 32,
+          "y": 112,
+          "zOrder": 57,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 135,
+          "customSize": true,
+          "height": 1,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "9248fc36-91dd-4580-ad07-f33e967c2b94",
+          "width": 32,
+          "x": 96,
+          "y": 48,
+          "zOrder": 57,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 1,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "908938af-4a12-474b-a542-2b46151021bc",
+          "width": 32,
+          "x": 96,
+          "y": 48,
+          "zOrder": 57,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 1,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "4be81b7d-d05f-4442-a295-8921389f79de",
+          "width": 32,
+          "x": 96,
+          "y": 48,
+          "zOrder": 57,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 45,
+          "customSize": true,
+          "height": 1,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "f629fb64-3240-422a-9808-6bb8a3fa18f4",
+          "width": 32,
+          "x": 96,
+          "y": 48,
+          "zOrder": 57,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 135,
+          "customSize": true,
+          "height": 1,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "9a872b5c-4466-457a-b9a9-1c6357d9a72b",
+          "width": 32,
+          "x": 64,
+          "y": 80,
+          "zOrder": 57,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 1,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "db7c461d-ebf8-446c-8b3b-50cda3b7cb78",
+          "width": 32,
+          "x": 64,
+          "y": 80,
+          "zOrder": 57,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 1,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "dc70c2f5-e012-4cab-9ae4-5e5c198697b0",
+          "width": 32,
+          "x": 64,
+          "y": 80,
+          "zOrder": 57,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 45,
+          "customSize": true,
+          "height": 1,
+          "layer": "",
+          "locked": false,
+          "name": "obstacle",
+          "persistentUuid": "f3caf6d0-6745-477d-9cc0-dd697de0707f",
+          "width": 32,
+          "x": 64,
+          "y": 80,
+          "zOrder": 57,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "name": "player",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "PAngle",
+              "value": ""
+            },
+            {
+              "name": "PForce",
+              "value": ""
+            }
+          ],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "P-1",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "P-1-1-0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 4,
+                        "y": 4
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "wall",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "A",
+              "value": ""
+            },
+            {
+              "name": "B",
+              "value": ""
+            },
+            {
+              "name": "C",
+              "value": ""
+            },
+            {
+              "name": "YYY",
+              "value": "0"
+            },
+            {
+              "name": "id",
+              "value": ""
+            },
+            {
+              "name": "X",
+              "value": ""
+            },
+            {
+              "name": "Y",
+              "value": ""
+            },
+            {
+              "name": "wall_angle_step",
+              "value": ""
+            },
+            {
+              "name": "anim",
+              "value": ""
+            },
+            {
+              "name": "colors",
+              "value": ""
+            }
+          ],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "wall",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "wall-1-16.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 1,
+                        "y": 16
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "wall-1-13.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 1,
+                        "y": 16
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "NewObject",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Text",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "name": "background",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "fon1280.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "forward",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "forward",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "buttons\\1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "backward",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "buttons\\2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "TurnRight",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "buttons\\3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "TurnLeft",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "buttons\\4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Right",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "buttons\\3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Left",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "buttons\\4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "up",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "buttons\\1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "down",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "buttons\\2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "obstacle",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "id",
+              "value": ""
+            },
+            {
+              "name": "rotate",
+              "value": ""
+            },
+            {
+              "name": "Y",
+              "value": ""
+            }
+          ],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "P-1",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "P-1-1-6.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 8,
+                        "y": 8
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "obstacle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "obstacle-1-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "obstacle-1-3",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "obstacle-1-3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 19,
+                            "y": 0
+                          },
+                          {
+                            "x": 44,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 19
+                          },
+                          {
+                            "x": 64,
+                            "y": 44
+                          },
+                          {
+                            "x": 44,
+                            "y": 64
+                          },
+                          {
+                            "x": 19,
+                            "y": 64
+                          },
+                          {
+                            "x": 0,
+                            "y": 44
+                          },
+                          {
+                            "x": 0,
+                            "y": 19
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "NewObject2",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Text",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "CountBase",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Text",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "FPS",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Text",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "NewObject3",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Controls: \nUp arrow - moving forward\nDown arrow - moving backward\nRight arrow - turn right\nLeft arrow - turn left\nD - step right\nA - step left\nW - camera up\nS - camera down\nM - level plan",
+          "font": "",
+          "characterSize": 16,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "name": "sensor",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "id",
+              "value": ""
+            },
+            {
+              "name": "step",
+              "value": ""
+            }
+          ],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "sensor",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "sensor-1-0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 4,
+                        "y": 1
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 4,
+                        "y": 1
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "events": [
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": true,
+          "name": "FPS Meter",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "fps",
+                    "+",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Timer"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    "\"fps\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "FPS",
+                    "=",
+                    "\"FPS \"+ToString(Variable(fps))"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "fps",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"fps\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Trigger once",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "sensorid",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "angle_step",
+                "=",
+                "45"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "wall_id",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "wall_anim",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "wall_colors",
+                "=",
+                "2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAngle"
+              },
+              "parameters": [
+                "player",
+                "=",
+                "180"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"background\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Repeat",
+              "repeatExpression": "181",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "sensor",
+                    "0",
+                    "0",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "sensor",
+                    "id",
+                    "=",
+                    "Variable(sensorid)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "sensor",
+                    "step",
+                    "=",
+                    "Variable(angle_step)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "sensorid",
+                    "+",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "angle_step",
+                    "+",
+                    "0.5"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Repeat",
+              "repeatExpression": "181",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "wall",
+                    "0",
+                    "0",
+                    "\"3D\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "wall",
+                    "id",
+                    "=",
+                    "Variable(wall_id)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "wall",
+                    "anim",
+                    "=",
+                    "Variable(wall_anim)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "wall_id",
+                    "+",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "wall_anim",
+                    "+",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "wall_anim",
+                        ">",
+                        "15"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "wall_anim",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "wall",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "wall_colors",
+                    "<=",
+                    "180"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "wall",
+                    "colors",
+                    "=",
+                    "Variable(wall_colors)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "wall_colors",
+                    "+",
+                    "2"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "wall",
+                    "colors",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "wall_colors",
+                    "=",
+                    "182"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "wall",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "wall_colors",
+                        "<=",
+                        "182"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "wall",
+                        "colors",
+                        "=",
+                        "Variable(wall_colors)"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "wall_colors",
+                        "-",
+                        "2"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "wall",
+                            "colors",
+                            "=",
+                            "182"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "wall",
+                            "colors",
+                            "=",
+                            "180"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Actions",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "player",
+                "obstacle",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "player",
+                "obstacle",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarObjet"
+              },
+              "parameters": [
+                "obstacle",
+                "rotate",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Rotate"
+              },
+              "parameters": [
+                "obstacle",
+                "64",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "sensor",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Raycast"
+              },
+              "parameters": [
+                "obstacle",
+                "player.X()",
+                "player.Y()",
+                "player.Angle()+sensor.Variable(step)",
+                "1024",
+                "rayx",
+                "rayy",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "sensor",
+                "=",
+                "Variable(rayx)",
+                "=",
+                "Variable(rayy)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAngle"
+              },
+              "parameters": [
+                "sensor",
+                "=",
+                "player.Angle()+sensor.Variable(step)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeWidth"
+              },
+              "parameters": [
+                "sensor",
+                "=",
+                "player.Distance(sensor)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "wall",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarObjet"
+              },
+              "parameters": [
+                "sensor",
+                "id",
+                "=",
+                "wall.Variable(id)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "wall",
+                "X",
+                "=",
+                "sensor.X()"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "wall",
+                "Y",
+                "=",
+                "sensor.Y()"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "wall",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeSprite"
+              },
+              "parameters": [
+                "wall",
+                "=",
+                "wall.Variable(anim)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PauseAnimation"
+              },
+              "parameters": [
+                "wall"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "wall",
+                "C",
+                "=",
+                "cos(ToRad(player.Angle()+90)) * (wall.Variable(X) - player.X()) + sin(ToRad(player.Angle()+90)) * (wall.Variable(Y) - player.Y())"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "wall",
+                "B",
+                "=",
+                "wall.Variable(YYY)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "wall",
+                "A",
+                "=",
+                "cos(ToRad(player.Angle()+90)) * (wall.Variable(Y) - player.Y()) + sin(-ToRad(player.Angle()+90)) * (wall.Variable(X) - player.X())"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "wall",
+                "=",
+                "wall.Variable(C) * -1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeScale"
+              },
+              "parameters": [
+                "wall",
+                "=",
+                "(SceneWindowHeight()/2) / wall.Variable(C)*2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "wall",
+                "A",
+                "=",
+                "wall.Variable(A) * wall.ScaleX()"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "wall",
+                "B",
+                "=",
+                "wall.Variable(B) * wall.ScaleY()"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreX"
+              },
+              "parameters": [
+                "wall",
+                "=",
+                "wall.Variable(A)/2 + SceneWindowWidth()/2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreY"
+              },
+              "parameters": [
+                "wall",
+                "=",
+                "(wall.Variable(B) * -1) + SceneWindowHeight() / 2"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "wall",
+                "ToString(wall.Variable(colors)*1.4)+\";\"+ToString(wall.Variable(colors)*1.4) +\";\"+ToString(wall.Variable(colors)*1.4)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "PC Controls",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "SystemInfo::IsMobile"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"Controls\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Right"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAngle"
+                  },
+                  "parameters": [
+                    "player",
+                    "+",
+                    "2"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAngle"
+                  },
+                  "parameters": [
+                    "player",
+                    "-",
+                    "2"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Up"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "AddForceAL"
+                  },
+                  "parameters": [
+                    "player",
+                    "player.Angle()+90",
+                    "128",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Down"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "AddForceAL"
+                  },
+                  "parameters": [
+                    "player",
+                    "player.Angle()+270",
+                    "128",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "a"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "AddForceAL"
+                  },
+                  "parameters": [
+                    "player",
+                    "player.Angle()",
+                    "128",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "d"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "AddForceAL"
+                  },
+                  "parameters": [
+                    "player",
+                    "player.Angle() + 180",
+                    "128",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "w"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "wall",
+                    "YYY",
+                    "-",
+                    "2"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "s"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "wall",
+                    "YYY",
+                    "+",
+                    "2"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Mobile Controls",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SystemInfo::IsMobile"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"Controls\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TouchSimulateMouse"
+              },
+              "parameters": [
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "TurnRight",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAngle"
+                  },
+                  "parameters": [
+                    "player",
+                    "+",
+                    "2"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "TurnLeft",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAngle"
+                  },
+                  "parameters": [
+                    "player",
+                    "-",
+                    "2"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "forward",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "AddForceAL"
+                  },
+                  "parameters": [
+                    "player",
+                    "player.Angle()+90",
+                    "80",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "backward",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "AddForceAL"
+                  },
+                  "parameters": [
+                    "player",
+                    "player.Angle() + 270",
+                    "80",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "Left",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "AddForceAL"
+                  },
+                  "parameters": [
+                    "player",
+                    "player.Angle()",
+                    "80",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "Right",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "AddForceAL"
+                  },
+                  "parameters": [
+                    "player",
+                    "player.Angle() + 180",
+                    "80",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "up",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "wall",
+                    "YYY",
+                    "-",
+                    "2"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "down",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "wall",
+                    "YYY",
+                    "+",
+                    "2"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        }
+      ],
+      "layers": [
+        {
+          "name": "background",
+          "visibility": false,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "name": "2D",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "name": "3D",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "name": "Obstacle",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        },
+        {
+          "name": "Controls",
+          "visibility": false,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "name": "floor",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "name": "walls",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "name": "roof",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": []
+    }
+  ],
+  "externalEvents": [],
+  "eventsFunctionsExtensions": [],
+  "externalLayouts": [],
+  "externalSourceFiles": []
+}
